@@ -38,6 +38,8 @@ stages:
       displayName: 'Maven Package'
       inputs:
         mavenPomFile: 'complete/pom.xml'
+        javaHomeSelection: 'path'
+        jdkDirectory: '/usr/local/openjdk-17'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
