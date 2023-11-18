@@ -31,7 +31,7 @@ stages:
       container: maven:3.8.1-openjdk-17-slim
       variables:
       - name: JAVA_HOME
-        value: /home/vsts/work/openjdk-17
+        value: /home/vsts/work/1/a/openjdk-17
 
     steps:
     - task: Maven@3
@@ -39,7 +39,7 @@ stages:
       inputs:
         mavenPomFile: 'complete/pom.xml'
         javaHomeOption: Path
-        jdkDirectory: '/home/vsts/work/openjdk-17'
+        jdkDirectory: '/home/vsts/work/1/a/openjdk-17'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
