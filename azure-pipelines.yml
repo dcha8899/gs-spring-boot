@@ -44,5 +44,3 @@ stages:
 
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
-
-- 
